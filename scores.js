@@ -28,20 +28,12 @@
       var results = document.getElementById('results');
       results.innerHTML="<h2>You scored " + score + " points out of " + numOfQuestions+"</h2>"
     if(score > 9){
-       $.ajax({
-          type: 'POST',
-          url: 'http://localhost:3000/api/listener',
-          data: score,
-          success: function(data) {
-            console.log(data);
-           },
-          error: function() {
-            alert('error saving listener');
-          }
-        });
-      }
+        window.location.href = "http://localhost:3000/add-listener.html";
+    }
       else{
         alert("You failed the test");
+        window.location.href = "http://localhost/x_material_kit_free_v1.1.1/";
+
       }
      return false;
      }
