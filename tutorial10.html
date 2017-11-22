@@ -21,6 +21,9 @@
 
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<link href="assets/css/demo.css" rel="stylesheet" />
+	<link href="assets/css/nouislider.css" rel="stylesheet" />
+	<link href="assets/css/nouislider.min.css" rel="stylesheet" />
+
 </head>
 
 <body class="tutorial-page">
@@ -73,13 +76,13 @@
 	                <legend></legend>
 									<div class="col-md-8 col-md-offset-2">
 	               <h4 Style="color:darkgrey;"><b>How did you feel yesterday?</b></h4>
- 									<div id="sliderRegular" class="slider"></div>
+ 									<div id="slider" class="slider"></div>
 								 <h4 Style="color:darkgrey;"><b>How do you feel today?</b></h4>
-									 <div id="sliderRegular1" class="slider"></div>
+									 <div id="sliders" class="slider"></div>
 								 <h4 Style="color:darkgrey;"><b>How do you feel now?</b></h4>
-	 								<div id="sliderRegular2" class="slider"></div>
+	 								<div id="sliderss" class="slider"></div>
 				 <div class="footer text-center">
-					 <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+					 <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="myfunction();">
                 Submit
            </button>
 					 </div>
@@ -111,8 +114,10 @@
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="assets/js/material.min.js"></script>
 
+
 	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
 	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+	<script src="assets/js/nouislider.js" type="text/javascript"></script>
 
 	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
 	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
@@ -130,34 +135,6 @@
 		});
 
 </script>
-<script>
-	$('#sliderRegular').noUiSlider({
-	start: 40,
-	connect: "lower",
-	range: {
-	    min: 0,
-	    max: 100
-	}
-});
-</script>
-<script>
-	$('#sliderRegular1').noUiSlider({
-	start: 40,
-	connect: "lower",
-	range: {
-	    min: 0,
-	    max: 100
-	}
-});
-</script>
-<script>
-	$('#sliderRegular2').noUiSlider({
-	start: 40,
-	connect: "lower",
-	range: {
-	    min: 0,
-	    max: 100
-	}
-});
-</script>
+<script src="graphs.js"></script>
+
 </html>
