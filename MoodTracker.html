@@ -23,9 +23,6 @@
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<link href="assets/css/demo.css" rel="stylesheet" />
 
-    <script src="live-chat-app-client.js"></script>
-    <link rel="stylesheet" href="live-chat-app-client.css">
-
 </head>
 
 <body class="index-page">
@@ -42,10 +39,10 @@
 
 	        	<div class="logo-container">
 	                <div class="logo">
-	                    <img src="assets/img/logo.png" alt="Creative Tim Logo">
+	                    <img src="assets/img/mood1.png" alt="Creative Tim Logo">
 	                </div>
 	                <div class="brand">
-	                    Live Love & Laugh
+	                    Mood Tracker
 	                </div>
 
 
@@ -56,30 +53,14 @@
 	    <div class="collapse navbar-collapse" id="navigation-index">
 	    	<ul class="nav navbar-nav navbar-right">
 				<li>
-					<a href="BecomeListener.html" target="_blank">
-						<i class="material-icons">surround_sound</i>
-						 Become a Listener
-					</a>
-				</li>
-				<li>
 					<a href="http://localhost:3000" target="_blank">
 						<i class="material-icons">account_box</i>
-						 Member Login
+						 Login
 					</a>
 				</li>
 				<li>
-						<a href="examples/DepressionOverview.html" target="_blank">
-							 <i class="material-icons">description</i>
-							 Depression Overview
-						</a>
-					</li>
-					<li>
-						 <a href="MoodTracker.html" target="_blank">
-								<i class="material-icons">mood</i>
-								Mood Tracker
-						 </a>
-				 </li>
 
+				</li>
 	    	</ul>
 	    </div>
 	</div>
@@ -87,17 +68,21 @@
 <!-- End Navbar -->
 
 <div class="wrapper">
-	<div class="header header-filter" style="background-image: url('assets/img/bg2.jpeg');">
+	<div class="header header-filter" style="background-image: url('assets/img/mood.jpg');">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
 					<div class="brand">
-						<h1>Cheer</h1>
-						<h3>Once you choose hope, anything is possible.</h3>
+						<h1>Mood Tracker</h1>
+						<h3>track your mood & get anonymous support</h3>
 					</div>
 				</div>
 			</div>
-
+			<div class="row">
+					<div class="col-md-4 col-md-offset-4 text-center">
+						  <a href="http://localhost:3000" class="btn btn-default" role="button">Start</a>
+					</div>
+			 </div>
 		</div>
 	</div>
 
@@ -106,69 +91,15 @@
 	    	<div class="container">
 	            <div class="title">
 								<div class="text-center">
-	                <h2>Need to Talk?</h2>
-									<h3>Connect with caring people for online counseling.</h3>
-									<h4>Free, anonymous and confidential online text chat with trained listeners.</h4>
-								         </div>
-											 </div>
-											 <div class="section" id="carousel">
-								 			<div class="container">
-								 				<div class="row">
-								 					<div class="col-md-8 col-md-offset-2">
-
-								 						<!-- Carousel Card -->
-								 						<div class="card card-raised card-carousel">
-								 							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-								 								<div class="carousel slide" data-ride="carousel">
-
-								 									<!-- Indicators -->
-								 									<ol class="carousel-indicators">
-								 										<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-								 										<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-								 										<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-								 									</ol>
-
-								 									<!-- Wrapper for slides -->
-								 									<div class="carousel-inner">
-								 										<div class="item active">
-								 											<img src="assets/img/bg5.jpeg" alt="Awesome Image">
-								 											<div class="carousel-caption">
-
-								 												<h4 style="color:yellow;">Lighten up, just enjoy life, smile more, laugh more, and don't get so worked up about things.</h4>
-								 											</div>
-								 										</div>
-								 										<div class="item">
-								 											<img src="assets/img/bg3.jpeg" alt="Awesome Image">
-								 											<div class="carousel-caption">
-								 												<h4>Time you enjoy wasting, was not wasted.</h4>
-								 											</div>
-								 										</div>
-								 										<div class="item">
-								 											<img src="assets/img/bg4.jpeg" alt="Awesome Image">
-																			<div class="carousel-caption">
-								 												<h4>Depression is caused when we are living to please others.</h4>
-								 											</div>
-								 										</div>
-								 									</div>
-
-								 									<!-- Controls -->
-								 									<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-								 										<i class="material-icons">keyboard_arrow_left</i>
-								 									</a>
-								 									<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-								 										<i class="material-icons">keyboard_arrow_right</i>
-								 									</a>
-								 								</div>
-								 							</div>
-								 						</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+	                <h2>For Mood Tracking</h2>
+									<h3>Analyse your mood on graphs and calendars; get support and advice.</h3>
+									<h4>Using this app, you’ll be able to track your happiness and find out what factors — for you personally — are associated with greater happiness. You’ll also contribute to our scientific understanding of happiness.
+                  </h4>
+								  </div>
+							 </div>
+							 </div>
 						</div>
+					</div>
 						<!-- Navbar Primary  -->
 					<nav class="navbar navbar-primary">
 						<div class="container">
@@ -208,13 +139,6 @@
 						</div>
 					</nav>
 					<!-- End Navbar Primary -->
-
-    <script>
-        // you need to initialize your chatBox here
-        // you need to provide your client app id here
-        // you need to create a client app in the host app
-        liveChat.init('7T9a3RwHJPDrANL4i');
-    </script>
 
 </body>
 	<!--   Core JS Files   -->

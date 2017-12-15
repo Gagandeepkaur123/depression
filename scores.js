@@ -32,7 +32,7 @@
     }
       else{
         alert("You failed the test");
-        window.location.href = "http://localhost/x_material_kit_free_v1.1.1/";
+        window.location.href = "http://localhost/FriendsInNeed/";
 
       }
      return false;
